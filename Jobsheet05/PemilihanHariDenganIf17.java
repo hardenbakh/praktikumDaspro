@@ -11,7 +11,7 @@ public class PemilihanHariDenganIf17 {
         } else if (angka > 5 && angka <7){
             System.out.println("weekend");
         }else {
-            System.out.println("invalid number");
+            System.out.println("invalid number ");
         }
     }
 }
