@@ -34,5 +34,6 @@ public class KafeDoWhile17 {
             System.out.println("total yang harus dibayar : Rp " + totalHarga);
             
         } while (true);
+        System.out.println(" Semua Transaksi selesai");
     }
 }
