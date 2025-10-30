@@ -10,7 +10,6 @@ public class Bioskop {
        double totalTiket=0;
        double totalPenjualan=0;
 
-        System.out.println("ketik 0 jika ingin mengakhiri input");
 
         do{
             System.out.println("masukkan jumlah tiket anda");
@@ -18,6 +17,8 @@ public class Bioskop {
 
             if (jmlTiket ==0) {
                 System.out.println("input selesai");
+                 System.out.println("jumlah tiket anda adalah " + jmlTiket);
+                 System.out.println("total penjualan per hari " + totalPenjualan);
                 break;
             }
             if (jmlTiket < 0) {
@@ -36,12 +37,12 @@ public class Bioskop {
 
           totalHarga = totalHarga - (totalHarga * diskon);
 
-          System.out.println("total harga tiket anda adalah" + totalHarga);
+          System.out.println("total harga tiket anda adalah :Rp." + totalHarga);
 
           totalTiket += jmlTiket;
-            totalPenjualan += totalHarga;
+          totalPenjualan += totalHarga;
 
-            System.out.println("jumlah tiket anda adalah " + jmlTiket);
+            System.out.println("jumlah penjualan tiket/ hari adalah " + totalTiket);
             System.out.println("total penjualan per hari " + totalPenjualan);
         } while (true);
         
