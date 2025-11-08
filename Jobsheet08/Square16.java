@@ -12,7 +12,7 @@ public class Square16 {
         for(int i=0; i<=n; i++){
             System.out.print("*");
         }
-        System.err.println();
+        System.out.println();
     }
     }
 }
