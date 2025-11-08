@@ -6,7 +6,7 @@ public class NilaiKelompok16 {
         Scanner sc = new Scanner(System.in);
 
         double nilai, totalNilai,rataNilai=0;
-        int i= 1;
+        
         int kelompokTertinggi=0;
         int kelompokTerendah=0;
 
@@ -15,7 +15,7 @@ public class NilaiKelompok16 {
         terendah = 100;
         
 
-        while (i<=6) {
+        for (int i=1;i<=6;i++) {
             System.out.println("Kelompok " + i);
             totalNilai=0;
 
@@ -36,7 +36,7 @@ public class NilaiKelompok16 {
             terendah = rataNilai;
             kelompokTerendah=i;
          }
-            i++;
+    
         }
         
 
