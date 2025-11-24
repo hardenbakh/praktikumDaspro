@@ -16,14 +16,14 @@ public class PemilihanHari17 {
             case "friday":
                 dayType = "weekday";
                 
-                break;
+                break ;
             case "saturday":
             case "sunday":
-                dayType = "weekday";
-        
+                dayType = "weekeed";
+                break;
             default:
                 dayType = "invalid day name";
         }
-        System.out.println(dayName + "is a" + dayType);
+        System.out.println(dayName + " is a " + dayType);
     }
 }

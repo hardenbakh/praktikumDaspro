@@ -11,7 +11,7 @@ public class UjianSkripsiNested17 {
         int bimbinganP1 = sc.nextInt();
 
         System.out.println("masukkan jumlah log bimbingan pembimbing 2 : ");
-        int bimbinganP2 = sc.nextInt();
+        int bimbinganP2 = sc.nextInt();  
 
         if (bebaskompen.equalsIgnoreCase("Ya")) {
             if (bimbinganP1 >= 8 && bimbinganP2 >= 4){
@@ -26,6 +26,7 @@ public class UjianSkripsiNested17 {
         } else {
             pesan = "Gagal! Mahasiswa masih memiliki tanggungan kompen";
         }
+        
         System.out.println(pesan);
     }   
 
