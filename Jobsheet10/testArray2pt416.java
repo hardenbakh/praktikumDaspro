@@ -1,6 +1,6 @@
 package Jobsheet10;
 import java.util.Scanner;
-public class testArray2pt4{
+public class testArray2pt416{
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

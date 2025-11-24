@@ -3,7 +3,7 @@ package Jobsheet10;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Numbers16 {
+public class Number16 {
     public static void main(String[] args) {
         
         int [][] myNumbers= new int [3][];
