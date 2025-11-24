@@ -1,8 +1,5 @@
 package Jobsheet10;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class Numbers16 {
     public static void main(String[] args) {
         
