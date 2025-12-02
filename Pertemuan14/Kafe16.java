@@ -62,7 +62,7 @@ public class Kafe16 {
         // memasukkan kode promo
         // System.out.println("Masukkan kode promo anda : ");
         // kodePromo = sc.nextLine();
-        // menampilkan kode promo yang didapat
+        //// menampilkan kode promo yang didapat
         // if (kodePromo.equalsIgnoreCase("DISKON50")) {
         //     System.out.println("Selamat anda mendapatkan diskon sebesar 50%");
 
