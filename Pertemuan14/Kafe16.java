@@ -7,30 +7,53 @@ public class Kafe16 {
 
         Scanner sc = new Scanner(System.in);
 
-        // memasukkan nama menu dan banyak item 
+        int maxMenu = 10;
+        int[] daftarMenu = new int[maxMenu];
+        int[] jumlahItem = new int[maxMenu];
+        int totalMenu = 0;
+
+        String tambah;
+        do {
+            if (totalMenu >= maxMenu) {
+                System.out.println("jumlah maksimal sudah tercapai");
+                break;
+            }
+
         System.out.println("masukkan nomor menu : ");
         int pilihanMenu = sc.nextInt();
 
         System.out.println("masukkan banyak item :");
         int banyakItem = sc.nextInt();
 
+        daftarMenu[totalMenu] = pilihanMenu;
+        jumlahItem[totalMenu] = banyakItem;
+        totalMenu++;
+
         sc.nextLine();
+        System.out.println("Apakah ingin menambah menu lainnya?");
+        tambah = sc.nextLine();
+
+        }while (tambah.equalsIgnoreCase("ya"));
 
         System.out.println("Masukkan kode promo : ");
         String kodePromo = sc.nextLine();
 
 
-        int totalBayar = hitungTotalHarga16(pilihanMenu, banyakItem, kodePromo);
+        int totalBayar = hitungTotalHarga16(daftarMenu, jumlahItem, totalMenu, kodePromo);
 
-        System.out.println("total yang harus dibayarkan " + totalBayar);
+        System.out.println("total yang harus dibayarkan  Rp." + totalBayar);
 
     }
 
     // perhitungan harga
-    public static int hitungTotalHarga16(int pilihanMenu, int banyakItem, String kodePromo){
+    public static int hitungTotalHarga16(int[] daftarMenu, int[] jumlahItem,int totalMenu, String kodePromo){
         int[] hargaItems ={15000,20000,22000,12000,10000,18000};
 
-        int hargaTotal = hargaItems[pilihanMenu-1] * banyakItem;
+        int hargaTotal = 0;
+        for (int i =0; i < totalMenu; i++){
+            int j = daftarMenu[i] -1;
+            hargaTotal += hargaItems[j] * jumlahItem[i];
+        }
 
         int diskon = 0;
         if (kodePromo.equalsIgnoreCase("DISKON50")) {
