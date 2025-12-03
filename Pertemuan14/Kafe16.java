@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Kafe16 {
 
     public static void main(String[] args) {
-        Menu("Budi", true, "DISKON50,DISKON30");
+        Menu("Bambang", true, "DISKON50,DISKON30");
 
         Scanner sc = new Scanner(System.in);
 
